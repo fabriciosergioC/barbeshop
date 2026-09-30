@@ -1,0 +1,15 @@
+{
+  "name": "[NOME DA BARBEARIA] — Agendamento",
+  "short_name": "[NOME]",
+  "description": "Agende seu horário na barbearia: cortes, barba e tratamentos premium.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#121212",
+  "icons": [
+    { "src": "assets/img/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/img/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

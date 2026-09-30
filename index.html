@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>[NOME DA BARBEARIA] — Barbearia em [CIDADE] | Agende Online</title>
+  <meta name="description" content="Barbearia premium em [CIDADE]. Cortes, barba e tratamentos com profissionais experientes. Agende seu horário online pelo WhatsApp.">
+  <meta name="keywords" content="barbearia, [CIDADE], corte masculino, barba, degradê, agendamento online">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#121212">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="[NOME DA BARBEARIA]">
+  <meta property="og:title" content="[NOME DA BARBEARIA] — Barbearia em [CIDADE]">
+  <meta property="og:description" content="Cortes, barba e tratamentos premium. Agende seu horário online.">
+  <meta property="og:image" content="assets/img/og-image.png">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="[NOME DA BARBEARIA] — Barbearia em [CIDADE]">
+  <meta name="twitter:description" content="Cortes, barba e tratamentos premium. Agende seu horário online.">
+  <meta name="twitter:image" content="assets/img/og-image.png">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/img/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icons/icon.svg">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <!-- Versionar ?v= ao alterar assets (cache-busting simples sem build) -->
+  <link rel="stylesheet" href="assets/css/tokens.css?v=1">
+  <link rel="stylesheet" href="assets/css/base.css?v=1">
+  <link rel="stylesheet" href="assets/css/components.css?v=1">
+
+  <!-- Dados estruturados: LocalBusiness / BarberShop (SEO local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "[NOME DA BARBEARIA]",
+    "slogan": "Seu estilo começa aqui",
+    "image": "assets/img/og-image.png",
+    "telephone": "[TELEFONE]",
+    "email": "[E-MAIL]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[ENDEREÇO], [NÚMERO] — [BAIRRO]",
+      "addressLocality": "[CIDADE]",
+      "addressRegion": "[UF]",
+      "postalCode": "[CEP]",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "priceRange": "$$",
+    "acceptsReservations": "True"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__brand" aria-label="Página inicial">
+        <span class="accent">◆</span>
+        <span>[NOME DA BARBEARIA]</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#barbeiros">Barbeiros</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#planos">Planos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header__actions">
+        <span class="status-indicator" data-open-status>
+          <span class="dot" aria-hidden="true"></span>
+          <span data-status-text>Verificando horário…</span>
+        </span>
+        <a href="#" data-wa-link class="btn btn--outline btn--sm" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm4.9 14.1c-.2.6-1.2 1.1-1.7 1.2-.5 0-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+          <span class="sr-only">WhatsApp</span>
+        </a>
+        <button class="btn btn--primary btn--sm" type="button" data-open-booking data-booking-source="header">Agendar horário</button>
+        <button class="hamburger" id="hamburger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="kicker">Barbearia premium em [CIDADE]</span>
+          <h1 class="hero__title">Seu estilo <em>começa aqui</em>.</h1>
+          <p class="hero__subtitle">
+            Cortes clássicos e modernos, barba na navalha e atendimento de verdade.
+            Profissionais experientes, ambiente premium e horário marcado — sem espera.
+          </p>
+          <div class="hero__ctas">
+            <button class="btn btn--primary btn--lg" type="button" data-open-booking data-booking-source="hero">Agendar meu horário</button>
+            <a href="#servicos" class="btn btn--outline btn--lg">Conhecer serviços</a>
+          </div>
+          <div class="hero__microcopy" aria-label="Diferenciais">
+            <span>⚡ Agendamento rápido</span>
+            <span>✂️ Atendimento profissional</span>
+            <span>🏆 Ambiente premium</span>
+          </div>
+          <p class="hero__hours" style="color:var(--muted-color);font-size:var(--font-size-sm);">
+            <strong style="color:var(--text-color);">Horário de funcionamento:</strong>
+            Seg a Sex, 09h–20h · Sáb, 09h–18h
+          </p>
+        </div>
+
+        <div class="hero__media">
+          <img src="assets/img/placeholders/hero.svg"
+               alt="Ambiente interno da [NOME DA BARBEARIA]"
+               width="800" height="1000" fetchpriority="high">
+          <div class="hero__trust">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <div>
+              <strong>4,9/5</strong>
+              <small>Avaliação dos clientes</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BARRA DE CONFIANÇA ================= -->
+    <section class="stats section--tight" aria-label="Números da barbearia">
+      <div class="container">
+        <div class="stats__grid" id="stats-grid">
+          <div class="state" style="grid-column:1/-1;"><span class="spinner" role="status" aria-label="Carregando"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-grid__media" data-animate>
+          <img src="assets/img/placeholders/about.svg" alt="Interior da barbearia" loading="lazy" width="800" height="600">
+        </div>
+        <div data-animate>
+          <span class="kicker">Sobre nós</span>
+          <h2 class="section-title">Mais que um corte, <em>uma experiência</em></h2>
+          <p style="color:var(--muted-color);">
+            Nascemos com a missão de oferecer muito mais que cortes de cabelo: um espaço onde
+            cada cliente é atendido com atenção, técnica e pontualidade. Barbeiros experientes,
+            produtos premium e um ambiente feito para você relaxar e sair renovado.
+          </p>
+          <ul class="about-features" id="about-features"><!-- preenchido via JS --></ul>
+          <button class="btn btn--primary" type="button" data-open-booking data-booking-source="sobre" style="margin-top:var(--space-5);">
+            Quero conhecer a barbearia
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVIÇOS ================= -->
+    <section class="section" id="servicos" style="background:var(--surface-color);">
+      <div class="container">
+        <div class="section-head" data-animate>
+          <span class="kicker">Serviços</span>
+          <h2 class="section-title">Escolha seu <em>serviço</em></h2>
+          <p>Preços transparentes e duração informada em cada serviço.</p>
+        </div>
+        <div class="filters" id="services-filters" role="group" aria-label="Filtrar serviços"></div>
+        <div class="grid grid--3" id="services-grid">
+          <div class="state" style="grid-column:1/-1;"><span class="spinner" role="status" aria-label="Carregando serviços"></span>Carregando serviços…</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ANTES E DEPOIS ================= -->
+    <section class="section" id="resultados">
+      <div class="container">
+        <div class="section-head" data-animate>
+          <span class="kicker">Antes e depois</span>
+          <h2 class="section-title">Transformações <em>reais</em></h2>
+          <p>Arraste o divisor para comparar os resultados.</p>
+        </div>
+        <div class="grid grid--2" id="beforeafter-grid">
+          <div class="state" style="grid-column:1/-1;"><span class="spinner" role="status" aria-label="Carregando"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALERIA ================= -->
+    <section class="section" id="galeria" style="background:var(--surface-color);">
+      <div class="container">
+        <div class="section-head" data-animate>
+          <span class="kicker">Galeria</span>
+          <h2 class="section-title">Nosso <em>trabalho</em></h2>
+          <p>Cortes, barbas, ambiente e equipe.</p>
+        </div>
+        <div class="filters" id="gallery-filters" role="group" aria-label="Filtrar galeria"></div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= BARBEIROS ================= -->
+    <section class="section" id="barbeiros">
+      <div class="container">
+        <div class="section-head" data-animate>
+          <span class="kicker">Equipe</span>
+          <h2 class="section-title">Nossos <em>barbeiros</em></h2>
+          <p>Profissionais experientes, prontos para atender você.</p>
+        </div>
+        <div class="grid grid--3" id="barbers-grid">
+          <div class="state" style="grid-column:1/-1;"><span class="spinner" role="status" aria-label="Carregando equipe"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AVALIAÇÕES ================= -->
+    <section class="section" id="avaliacoes" style="background:var(--surface-color);">
+      <div class="container">
+        <div class="section-head" data-animate>
+          <span class="kicker">Avaliações</span>
+          <h2 class="section-title">O que dizem os <em>clientes</em></h2>
+        </div>
+        <div class="reviews-summary">
+          <span class="reviews-summary__score" id="reviews-score">—</span>
+          <span class="reviews-summary__stars" aria-hidden="true">★★★★★</span>
+          <span class="reviews-summary__count">Baseado nas avaliações dos nossos clientes</span>
+        </div>
+        <div class="reviews-track" id="reviews-track" aria-label="Depoimentos de clientes">
+          <div class="state" style="min-width:280px;"><span class="spinner" role="status" aria-label="Carregando avaliações"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PLANOS ================= -->
+    <section class="section" id="planos">
+      <div class="container">
+        <div class="section-head" data-animate>
+          <span class="kicker">Planos</span>
+          <h2 class="section-title">Economize sendo <em>assinante</em></h2>
+          <p>Corte sempre, pague menos. Cancele quando quiser.</p>
+        </div>
+        <div class="grid grid--2" id="plans-grid" style="max-width:760px;margin-inline:auto;">
+          <div class="state" style="grid-column:1/-1;"><span class="spinner" role="status" aria-label="Carregando planos"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq" style="background:var(--surface-color);">
+      <div class="container">
+        <div class="section-head" data-animate>
+          <span class="kicker">FAQ</span>
+          <h2 class="section-title">Perguntas <em>frequentes</em></h2>
+        </div>
+        <div class="faq" id="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section-head" data-animate>
+          <span class="kicker">Contato</span>
+          <h2 class="section-title">Onde nos <em>encontrar</em></h2>
+        </div>
+        <div class="contact-grid">
+          <ul class="contact-list" data-animate>
+            <li>
+              <span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div>
+                <strong>Endereço</strong>
+                <span>[ENDEREÇO], [NÚMERO] — [BAIRRO], [CIDADE]/[UF]</span>
+              </div>
+            </li>
+            <li>
+              <span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+              <div>
+                <strong>Telefone / WhatsApp</strong>
+                <a href="#" data-wa-link target="_blank" rel="noopener">[TELEFONE]</a>
+              </div>
+            </li>
+            <li>
+              <span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+              <div>
+                <strong>Horário de funcionamento</strong>
+                <span>Seg a Sex: 09h às 20h · Sábado: 09h às 18h</span>
+              </div>
+            </li>
+            <li>
+              <span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4a4 4 0 1 1-7.9 1.2 4 4 0 0 1 7.9-1.2Z"/><path d="M17.5 6.5h.01"/></svg></span>
+              <div>
+                <strong>Instagram</strong>
+                <a href="#" rel="noopener">[INSTAGRAM]</a>
+              </div>
+            </li>
+          </ul>
+          <div class="contact-map" data-animate>
+            <!-- Substituir por embed real do Google Maps em BUSINESS_CONFIG.integrations.googleMapsEmbed -->
+            <iframe
+              title="Mapa de localização da barbearia"
+              src="https://www.google.com/maps?q=&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:var(--space-6);">
+          <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&destination=[ENDERECO+COMPLETO]" target="_blank" rel="noopener">🧭 Traçar rota até a barbearia</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA FINAL ================= -->
+    <section class="section" style="background:var(--grad-primary);text-align:center;">
+      <div class="container" data-animate>
+        <span class="kicker">Vagas limitadas por horário</span>
+        <h2 class="section-title">Pronto para o <em>seu melhor visual</em>?</h2>
+        <p style="color:var(--muted-color);max-width:520px;margin:0 auto var(--space-5);">
+          Agende em menos de 1 minuto. Sem espera, sem complicação.
+        </p>
+        <button class="btn btn--primary btn--lg" type="button" data-open-booking data-booking-source="cta-final">Agendar meu horário agora</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="#inicio" class="header__brand" style="margin-bottom:var(--space-3);">
+            <span class="accent">◆</span> [NOME DA BARBEARIA]
+          </a>
+          <p>Barbearia premium em [CIDADE]. Estilo, técnica e atendimento em um só lugar.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4a4 4 0 1 1-7.9 1.2 4 4 0 0 1 7.9-1.2Z"/><path d="M17.5 6.5h.01"/></svg></a>
+            <a href="#" data-wa-link target="_blank" rel="noopener" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm4.9 14.1c-.2.6-1.2 1.1-1.7 1.2-.5 0-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#barbeiros">Barbeiros</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#planos">Planos</a>
+        </div>
+        <div>
+          <h4>Serviços</h4>
+          <a href="#servicos">Cortes</a>
+          <a href="#servicos">Barba</a>
+          <a href="#servicos">Combos</a>
+          <a href="#servicos">Tratamentos</a>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <p style="margin-bottom:var(--space-2);">[ENDEREÇO], [NÚMERO]<br>[BAIRRO], [CIDADE]/[UF]</p>
+          <a href="#" data-wa-link target="_blank" rel="noopener">[TELEFONE]</a>
+          <a href="#">[INSTAGRAM]</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 [NOME DA BARBEARIA]. Todos os direitos reservados.</span>
+        <span>
+          <a href="docs/politica-privacidade.md" target="_blank">Política de Privacidade</a> ·
+          <a href="docs/termos-uso.md" target="_blank">Termos de Uso</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLUTUANTES ================= -->
+  <div class="float-cta">
+    <button class="btn btn--primary btn--lg" type="button" data-open-booking data-booking-source="float-mobile">AGENDAR</button>
+  </div>
+  <a class="float-whats" href="#" data-wa-link target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm4.9 14.1c-.2.6-1.2 1.1-1.7 1.2-.5 0-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.2.1.4 0 .6l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+  </a>
+
+  <!-- ================= LGPD ================= -->
+  <div class="lgpd-banner" id="lgpd-banner" role="dialog" aria-label="Aviso de cookies e privacidade">
+    <p>Usamos dados básicos para melhorar sua experiência e processar agendamentos, conforme a <a href="docs/politica-privacidade.md" target="_blank">Política de Privacidade</a> (LGPD).</p>
+    <div class="lgpd-banner__actions">
+      <button class="btn btn--outline btn--sm" type="button" data-lgpd-reject>Recusar</button>
+      <button class="btn btn--primary btn--sm" type="button" data-lgpd-accept>Aceitar</button>
+    </div>
+  </div>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada" aria-hidden="true">
+    <button class="lightbox__close" type="button" aria-label="Fechar">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Imagem anterior">‹</button>
+    <div>
+      <img src="" alt="">
+      <p class="lightbox__caption"></p>
+    </div>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Próxima imagem">›</button>
+  </div>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="assets/js/core/businessConfig.js?v=1"></script>
+  <script src="assets/js/core/demoData.js?v=1"></script>
+  <script src="assets/js/icons/icons.js?v=1"></script>
+  <script src="assets/js/utils/helpers.js?v=2"></script>
+  <script src="assets/js/core/availability.js?v=1"></script>
+  <script src="assets/js/core/api.js?v=2"></script>
+  <script src="assets/js/sections/services.js?v=1"></script>
+  <script src="assets/js/sections/gallery.js?v=1"></script>
+  <script src="assets/js/sections/team.js?v=1"></script>
+  <script src="assets/js/sections/faq.js?v=1"></script>
+  <script src="assets/js/components/booking-wizard.js?v=4"></script>
+  <script src="assets/js/components/ui.js?v=1"></script>
+  <script src="assets/js/main.js?v=1"></script>
+</body>
+</html>
