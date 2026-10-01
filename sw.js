@@ -4,7 +4,7 @@
    assets estáticos. Sempre bump versão ao alterar assets.
    ============================================================ */
 
-const CACHE = "barbearia-v1";
+const CACHE = "barbearia-v8";
 const ASSETS = [
   "./",
   "./index.html",

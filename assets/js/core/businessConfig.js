@@ -7,26 +7,26 @@
 
 window.BUSINESS_CONFIG = {
   /* ---------- Identidade ---------- */
-  name: "[NOME DA BARBEARIA]",
-  shortName: "[NOME]",
+  name: "Barbearia Imperial",
+  shortName: "Imperial",
   slogan: "Seu estilo começa aqui",
   logo: null, // caminho p/ "assets/img/logo.svg" quando houver
   logoText: true, // renderiza o nome em texto enquanto não houver logo
 
   /* ---------- Contato (preencher com dados reais) ---------- */
-  phone: "[TELEFONE]",               // ex.: (11) 99999-0000
-  whatsapp: "[WHATSAPP]",            // ex.: 5511999990000 (só números, com DDI)
+  phone: "(11) 99876-5432",
+  whatsapp: "5511998765432",          // só números, com DDI
   whatsappMessage: "Olá! Gostaria de agendar um horário.",
-  email: "[E-MAIL]",
+  email: "contato@barbeariaimperial.com.br",
   address: {
-    street: "[ENDEREÇO]",
-    number: "[NÚMERO]",
-    district: "[BAIRRO]",
-    city: "[CIDADE]",
-    state: "[UF]",
-    zip: "[CEP]"
+    street: "Rua Treze de Maio",
+    number: "847",
+    district: "Bela Vista",
+    city: "São Paulo",
+    state: "SP",
+    zip: "01327-000"
   },
-  instagram: "[INSTAGRAM]",          // ex.: @barbearia
+  instagram: "@barbeariaimperial",
   facebook: null,
   tiktok: null,
 
@@ -73,21 +73,21 @@ window.BUSINESS_CONFIG = {
 
   /* ---------- SEO ---------- */
   seo: {
-    title: "[NOME DA BARBEARIA] — Barbearia em [CIDADE] | Agende Online",
-    description: "Barbearia premium em [CIDADE]. Cortes, barba e tratamentos com profissionais experientes. Agende seu horário online pelo WhatsApp.",
-    keywords: "barbearia, [CIDADE], corte masculino, barba, degradê, agendamento online"
+    title: "Barbearia Imperial — Barbearia em São Paulo | Agende Online",
+    description: "Barbearia premium em São Paulo. Cortes, barba e tratamentos com profissionais experientes. Agende seu horário online pelo WhatsApp.",
+    keywords: "barbearia, São Paulo, Bela Vista, corte masculino, barba, degradê, agendamento online"
   },
 
   /* ---------- Popups ---------- */
   popups: {
-    firstVisit: { enabled: true, delaySeconds: 18, title: "Ganhe 10% na primeira visita", text: "Agende agora e use o cupom [CUPOM] no atendimento." },
+    firstVisit: { enabled: true, delaySeconds: 18, title: "Ganhe 10% na primeira visita", text: "Agende agora e use o cupom IMPERIAL10 no atendimento." },
     exitIntent: { enabled: true, title: "Antes de sair…", text: "Que tal garantir seu horário? Leva menos de 1 minuto." }
   },
 
   /* ---------- LGPD ---------- */
   lgpd: {
     policyUrl: "docs/politica-privacidade.md",
-    contactEmail: "[E-MAIL]"
+    contactEmail: "contato@barbeariaimperial.com.br"
   },
 
   /* ---------- Admin (usuários autorizados a conectar produção) ---------- */

@@ -1,0 +1,98 @@
+{
+  "gallery-2.webp": {
+    "id": "photo-1517832606299-7ae9b720a186",
+    "url": "https://images.unsplash.com/photo-1517832606299-7ae9b720a186?fm=webp&q=80&fit=crop&w=800&h=800",
+    "bytes": 55120
+  },
+  "ba-1-after.webp": {
+    "id": null,
+    "url": null,
+    "bytes": 123142,
+    "user": true,
+    "source": "Foto fornecida pelo usuário (trabalho real da barbearia)"
+  },
+  "ba-2-after.webp": {
+    "id": null,
+    "url": null,
+    "bytes": 149760,
+    "user": true,
+    "source": "Foto fornecida pelo usuário (Degradê + barba — montagem antes/depois na barbearia, lado direito)"
+  },
+  "ba-2-before.webp": {
+    "id": null,
+    "url": null,
+    "bytes": 151936,
+    "user": true,
+    "source": "Foto fornecida pelo usuário (Degradê + barba — montagem antes/depois na barbearia, lado esquerdo)"
+  },
+  "service-platinado.webp": {
+    "id": null,
+    "url": null,
+    "bytes": 58960,
+    "user": true,
+    "source": "Foto fornecida pelo usuário (trabalho real da barbearia)"
+  },
+  "gallery-5.webp": {
+    "id": null,
+    "url": null,
+    "bytes": 71232,
+    "user": true,
+    "source": "Foto fornecida pelo usuário (trabalho real da barbearia)"
+  },
+  "service-degrade.webp": {
+    "id": null,
+    "url": null,
+    "bytes": 17460,
+    "user": true,
+    "source": "Foto fornecida pelo usuário (trabalho real da barbearia)"
+  },
+  "gallery-1.webp": {
+    "id": null,
+    "url": null,
+    "bytes": 18828,
+    "user": true,
+    "source": "Foto fornecida pelo usuário (trabalho real da barbearia)"
+  },
+  "service-combo.webp": {
+    "id": null,
+    "url": null,
+    "bytes": 41924,
+    "user": true,
+    "source": "Foto fornecida pelo usuário (Foto degradê + barba fornecida pelo usuário)"
+  },
+  "service-terapia.webp": {
+    "id": null,
+    "url": null,
+    "bytes": 32302,
+    "user": true,
+    "source": "Foto fornecida pelo usuário (Terapia Capilar — lavagem no lavatório)"
+  },
+  "service-infantil.webp": {
+    "id": null,
+    "url": null,
+    "bytes": 22828,
+    "user": true,
+    "source": "Foto fornecida pelo usuário (Corte Infantil — degradê com risco)"
+  },
+  "service-sobrancelha.webp": {
+    "id": null,
+    "url": null,
+    "bytes": 30330,
+    "user": true,
+    "source": "Foto fornecida pelo usuário (Sobrancelha — design na navalha)"
+  },
+  "service-barba.webp": {
+    "id": null,
+    "url": null,
+    "bytes": 29258,
+    "user": true,
+    "source": "Foto fornecida pelo usuário (Barba Completa — barba modelada)"
+  },
+  "service-pigmentacao.webp": {
+    "id": null,
+    "url": null,
+    "bytes": 42116,
+    "user": true,
+    "source": "Foto fornecida pelo usuário (Pigmentação — aplicação na barba)"
+  }
+}

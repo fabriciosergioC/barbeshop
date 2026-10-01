@@ -1,6 +1,6 @@
 {
-  "name": "[NOME DA BARBEARIA] — Agendamento",
-  "short_name": "[NOME]",
+  "name": "Barbearia Imperial — Agendamento",
+  "short_name": "Imperial",
   "description": "Agende seu horário na barbearia: cortes, barba e tratamentos premium.",
   "lang": "pt-BR",
   "start_url": "./index.html",

@@ -44,8 +44,18 @@ Abra `http://localhost:8080`.
 Enquanto houver placeholders `[ASSIM]`, a página exibe o texto do placeholder
 (ao invés de dados falsos) — **nenhum dado é inventado**.
 
-**2. Imagens reais:** substitua os SVGs de [assets/img/placeholders/](assets/img/placeholders/)
-mantendo os mesmos nomes de arquivo (ou aponte os caminhos em [assets/js/core/demoData.js](assets/js/core/demoData.js)).
+**2. Imagens: as fotos de demonstração já estão em [assets/img/photos/](assets/img/photos/)
+(tema barbearia, WebP otimizado). **São fotos de banco (Unsplash) — temporárias.**
+Para usar as fotos reais do negócio, basta sobrescrever os arquivos mantendo os
+MESMOS nomes (`hero.jpg`, `interior.png`, `service-*.webp`, `barber-1..3.webp`,
+`gallery-1..6.*`, `ba-*-before/after.webp`, `avatar-1..4.webp`, `og-image.jpg`)
+— ou apontar os caminhos em [assets/js/core/demoData.js](assets/js/core/demoData.js)
+e nos dois `<img>` do [index.html](index.html). Dica: exporte em WebP, largura
+≈800–1200px, qualidade 80. O script `scripts/download-photos.mjs` documenta cada
+arquivo e pode rebaixar as fotos de demonstração (`node scripts/download-photos.mjs`;
+apague o arquivo específico para rebaixá-lo). Créditos/origem de cada imagem:
+[scripts/photo-credits.json](scripts/photo-credits.json) — lista completa na seção
+de **Créditos das imagens** abaixo.
 
 **3. Ao conectar um backend real**, defina `BUSINESS_CONFIG.integrations.apiBaseUrl`.
 A camada [assets/js/core/api.js](assets/js/core/api.js) passa a chamar a API REST
@@ -78,6 +88,8 @@ assets/
     utils/helpers.js           DOM, formatação, toasts, modais, analytics
 scripts/
   generate-placeholders.mjs    Gera os placeholders SVG identificados
+  download-photos.mjs          Baixa as fotos de demonstração (Unsplash → WebP)
+  photo-credits.json           Origem/URL de cada foto baixada
 docs/
   ARCHITECTURE.md              Arquitetura e roadmap das fases 3–12
   DATABASE.sql                 Modelo completo (27 entidades)
@@ -132,3 +144,35 @@ claramente separado de produção.
 - [x] LGPD + analytics condicionados a consentimento
 - [x] SEO + schema.org + PWA
 - [x] Acessibilidade (teclado, ARIA, contraste)
+
+## 🖼️ Créditos das imagens
+
+As fotos em `assets/img/photos/` são **imagens de demonstração do [Unsplash](https://unsplash.com)**
+(licença Unsplash: uso comercial permitido, atribuição não obrigatória —
+https://unsplash.com/license), otimizadas via CDN do Unsplash (`?fm=webp&q=80`, recorte
+proporcional ao layout). Elas **representam barbearia** (cortes, barba, ambiente, equipe)
+foram escolhidas para não haver imagens aleatórias — mas **devem ser substituídas pelas
+fotos reais do negócio** antes da divulgação, mantendo os nomes de arquivo.
+
+> **Já são fotos reais do negócio** (fornecidas pelo cliente, marcadas com
+> `"user": true` em [scripts/photo-credits.json](scripts/photo-credits.json)):
+> `placeholders/barbearia.jpg`, `placeholders/interior.png`, `gallery-6.jpg`,
+> `service-platinado.webp`, `gallery-5.webp`, `ba-1-after.webp`,
+> `service-degrade.webp`, `gallery-1.webp`, `service-combo.webp` e `ba-2-after.webp`.
+
+| Grupo | Arquivos | Descrição da foto |
+|---|---|---|
+| Hero / Sobre | `placeholders/barbearia.jpg`, `placeholders/interior.png` | **Fotos reais do negócio** (fornecidas pelo cliente) |
+| Serviços | `service-*.webp` (9) | Barbeiro trabalhando, barba na navalha, ferramentas, produtos, crianças/terapia; **degradê, platinado e degradê+barba = fotos reais** |
+| Barbeiros | `barber-1..3.webp` | Retratos masculinos (demos — trocar pelas fotos da equipe) |
+| Galeria | `gallery-1..5.webp`, `gallery-6.jpg` | Trabalhos/ambiente; **gallery-1 (degradê), gallery-5 (platinado) e gallery-6 (equipe) = fotos reais** |
+| Antes/Depois | `ba-*-before/after.webp` | "Depois" de ambas = **fotos reais**; "Antes" ainda stock (ideal: par do mesmo cliente) |
+| Avatares | `avatar-1..4.webp` | Retratos de pessoas (avaliações fictícias) |
+| Open Graph | `og-image.jpg` | Interior da barbearia (compartilhamento social) |
+
+A origem individual (photo-ID e URL de download) de cada arquivo está em
+[scripts/photo-credits.json](scripts/photo-credits.json), gerada automaticamente
+pelo script de download.
+
+> **LGPD/boas práticas:** os retratos de pessoas do Unsplash são modelo stock licenciado;
+> ao trocar por fotos de clientes reais, obtenha autorização de uso de imagem por escrito.

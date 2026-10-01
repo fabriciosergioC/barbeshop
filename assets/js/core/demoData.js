@@ -7,7 +7,7 @@
    ============================================================ */
 
 (function () {
-  const IMG = "assets/img/placeholders/";
+  const IMG = "assets/img/photos/";
 
   window.DEMO_DATA = {
     stats: [
@@ -25,15 +25,15 @@
         name: "Corte Tradicional",
         description: "Corte clássico com acabamento na navalha e finalização.",
         duration: 40, price: 60,
-        image: IMG + "service-corte.svg"
+        image: IMG + "service-corte.webp"
       },
       {
         id: "svc-corte-degrade",
         category: "cabelo",
         name: "Corte Degradê",
         description: "Fade personalizado com desenho e finalização premium.",
-        duration: 50, price: 70,
-        image: IMG + "service-degrade.svg"
+        duration: 50, price: 30,
+        image: IMG + "service-degrade.webp"
       },
       {
         id: "svc-corte-barba",
@@ -41,7 +41,7 @@
         name: "Corte + Barba",
         description: "Combo completo: corte, barba desenhada e toalha quente.",
         duration: 80, price: 110, promoPrice: 95,
-        image: IMG + "service-combo.svg"
+        image: IMG + "service-combo.webp"
       },
       {
         id: "svc-barba-completa",
@@ -49,7 +49,7 @@
         name: "Barba Completa",
         description: "Modelagem, navalha, toalha quente e óleo finalizador.",
         duration: 40, price: 55,
-        image: IMG + "service-barba.svg"
+        image: IMG + "service-barba.webp"
       },
       {
         id: "svc-sobrancelha",
@@ -57,7 +57,7 @@
         name: "Sobrancelha",
         description: "Design e alinhamento na navalha.",
         duration: 15, price: 20,
-        image: IMG + "service-sobrancelha.svg"
+        image: IMG + "service-sobrancelha.webp"
       },
       {
         id: "svc-pigmentacao",
@@ -65,7 +65,7 @@
         name: "Pigmentação",
         description: "Camuflagem de falhas com pigmento de longa duração.",
         duration: 45, price: 80,
-        image: IMG + "service-pigmentacao.svg"
+        image: IMG + "service-pigmentacao.webp"
       },
       {
         id: "svc-platinado",
@@ -73,7 +73,7 @@
         name: "Platinado",
         description: "Descoloração global com matização e tratamento.",
         duration: 180, price: 280,
-        image: IMG + "service-platinado.svg"
+        image: IMG + "service-platinado.webp"
       },
       {
         id: "svc-corte-infantil",
@@ -81,7 +81,7 @@
         name: "Corte Infantil",
         description: "Atendimento especial para os pequenos (até 10 anos).",
         duration: 30, price: 45,
-        image: IMG + "service-infantil.svg"
+        image: IMG + "service-infantil.webp"
       },
       {
         id: "svc-terapia-capilar",
@@ -89,7 +89,7 @@
         name: "Terapia Capilar",
         description: "Detox, hidratação e massagem no couro cabeludo.",
         duration: 40, price: 70,
-        image: IMG + "service-terapia.svg"
+        image: IMG + "service-terapia.webp"
       }
     ],
 
@@ -107,31 +107,31 @@
         specialties: ["Degradê", "Navalha", "Barba"],
         experienceYears: 14, rating: 4.9, appointments: 3200,
         bio: "Especialista em degradês milimétricos e atendimento premium.",
-        photo: IMG + "barber-1.svg", instagram: null
+        photo: IMG + "barber-1.webp", instagram: null
       },
       {
         id: "brb-2", name: "Rafael Costa", role: "Barbeiro Sênior",
         specialties: ["Cortes clássicos", "Pigmentação"],
         experienceYears: 9, rating: 4.8, appointments: 2100,
         bio: "Mestre dos cortes clássicos e pigmentação de falhas.",
-        photo: IMG + "barber-2.svg", instagram: null
+        photo: IMG + "barber-2.webp", instagram: null
       },
       {
         id: "brb-3", name: "Diego Souza", role: "Barbeiro & Colorista",
         specialties: ["Platinado", "Terapia capilar"],
         experienceYears: 7, rating: 4.8, appointments: 1600,
         bio: "Referência em transformações de cor e cuidado capilar.",
-        photo: IMG + "barber-3.svg", instagram: null
+        photo: IMG + "barber-3.webp", instagram: null
       }
     ],
 
     gallery: [
-      { category: "cortes", title: "Degradê navalhado", image: IMG + "gallery-1.svg" },
-      { category: "barbas", title: "Barba desenhada", image: IMG + "gallery-2.svg" },
-      { category: "ambiente", title: "Nosso espaço", image: IMG + "gallery-3.svg" },
-      { category: "cortes", title: "Clássico moderno", image: IMG + "gallery-4.svg" },
-      { category: "transformacoes", title: "Platinado", image: IMG + "gallery-5.svg" },
-      { category: "equipe", title: "A equipe", image: IMG + "gallery-6.svg" }
+      { category: "cortes", title: "Degradê navalhado", image: IMG + "gallery-1.webp" },
+      { category: "barbas", title: "Barba desenhada", image: IMG + "gallery-2.webp" },
+      { category: "ambiente", title: "Nosso espaço", image: IMG + "gallery-3.webp" },
+      { category: "cortes", title: "Clássico moderno", image: IMG + "gallery-4.webp" },
+      { category: "transformacoes", title: "Platinado", image: IMG + "gallery-5.webp" },
+      { category: "equipe", title: "A equipe", image: IMG + "gallery-6.jpg" }
     ],
 
     galleryCategories: [
@@ -149,24 +149,24 @@
         service: "Platinado",
         barber: "Diego Souza",
         description: "De corte escuro a platinado matizado em uma sessão.",
-        before: IMG + "ba-1-before.svg",
-        after: IMG + "ba-1-after.svg"
+        before: IMG + "ba-1-before.webp",
+        after: IMG + "ba-1-after.webp"
       },
       {
         title: "Degradê + barba",
         service: "Corte + Barba",
         barber: "Carlos Mendes",
         description: "Transformação completa com navalha e toalha quente.",
-        before: IMG + "ba-2-before.svg",
-        after: IMG + "ba-2-after.svg"
+        before: IMG + "ba-2-before.webp",
+        after: IMG + "ba-2-after.webp"
       }
     ],
 
     reviews: [
-      { name: "Lucas P.", rating: 5, date: "2026-09-12", service: "Corte + Barba", text: "Atendimento impecável. O melhor degradê que já fiz.", avatar: IMG + "avatar-1.svg" },
-      { name: "Bruno T.", rating: 5, date: "2026-08-30", service: "Barba Completa", text: "Ambiente premium e pontualidade britânica.", avatar: IMG + "avatar-2.svg" },
-      { name: "André M.", rating: 4, date: "2026-08-18", service: "Platinado", text: "Resultado excelente, só demorou um pouco mais que o previsto.", avatar: IMG + "avatar-3.svg" },
-      { name: "Felipe R.", rating: 5, date: "2026-07-27", service: "Corte Tradicional", text: "Sempre saio de lá renovado. Recomendo de olhos fechados.", avatar: IMG + "avatar-4.svg" }
+      { name: "Lucas P.", rating: 5, date: "2026-09-12", service: "Corte + Barba", text: "Atendimento impecável. O melhor degradê que já fiz.", avatar: IMG + "avatar-1.webp" },
+      { name: "Bruno T.", rating: 5, date: "2026-08-30", service: "Barba Completa", text: "Ambiente premium e pontualidade britânica.", avatar: IMG + "avatar-2.webp" },
+      { name: "André M.", rating: 4, date: "2026-08-18", service: "Platinado", text: "Resultado excelente, só demorou um pouco mais que o previsto.", avatar: IMG + "avatar-3.webp" },
+      { name: "Felipe R.", rating: 5, date: "2026-07-27", service: "Corte Tradicional", text: "Sempre saio de lá renovado. Recomendo de olhos fechados.", avatar: IMG + "avatar-4.webp" }
     ],
 
     plans: [
